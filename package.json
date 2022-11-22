@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "mongodb": "^4.3.1",
     "mongoose": "^6.2.1",
     "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.20",
     "stripe": "^10.15.0",
     "uuid": "^9.0.0"
   }

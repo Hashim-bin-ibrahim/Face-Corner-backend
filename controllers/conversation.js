@@ -18,6 +18,7 @@ exports.getConversation = async (req, res) => {
     const conversation = await Conversation.find({
       members: { $in: [req.params.userId] },
     });
+    console.log(conversation);
     res.status(200).json(conversation);
   } catch (error) {
     console.log(error);

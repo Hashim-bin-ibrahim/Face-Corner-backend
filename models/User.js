@@ -73,14 +73,17 @@ const userSchema = mongoose.Schema(
     },
     following: {
       type: Array,
+      ref: "User",
       default: [],
     },
     followers: {
       type: Array,
+      ref: "User",
       default: [],
     },
     requests: {
       type: Array,
+      ref: "User",
       default: [],
     },
     search: [
